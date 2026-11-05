@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>梁文峰与大肥鱼们 · 贪吃蛇 02</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="shell">
+ <header class="heading"><div class="heading-left"><span class="edition">大肥鱼 / LOCAL PLAY 02</span><h1>梁文峰与大肥鱼们<span class="title-dot">。</span></h1><p>一个头，领着一串头，去吃另一群 AI。</p></div><div class="head-preview" aria-hidden="true"><img src="assets/head/closed.png" alt=""><span>×</span><img class="fish-preview" src="assets/fish/happy.png" alt=""></div></header>
+ <section class="game" aria-label="贪吃蛇游戏">
+  <div class="game-top"><div class="game-label"><span class="running-dot" id="runningDot"></span><span id="statusLabel">准备下水</span><span class="map-label">24 × 16 / 四边互通</span></div><div class="counters"><span>吞下 <strong id="score">0</strong></span><span>鱼头 <strong id="bodyCount">10</strong></span></div></div>
+  <div class="canvas-shell" id="canvasShell"><canvas id="board" width="1056" height="704" tabindex="0" aria-label="24乘16格贪吃蛇地图，方向键或WASD控制，四边穿越，自撞失败"></canvas><div class="overlay" id="overlay"><div class="overlay-panel"><span class="overlay-kicker" id="overlayKicker">已集结 10 个大肥鱼</span><h2 id="overlayTitle">可以开始抽象了。</h2><p id="overlayDescription">边界不是墙，自己才是。</p><button id="overlayStart" disabled>准备贴图中… <span>↗</span></button><span class="overlay-shortcut" id="overlayShortcut">Enter 开始 · 方向键 / WASD</span></div></div></div>
+  <div class="game-bottom"><p id="eventText" role="status" aria-live="polite">本地加载素材中…</p><span id="mouthIndicator">牙齿合上</span></div>
+ </section>
+ <section class="toolbar" aria-label="游戏操作"><div class="main-controls"><button id="pauseButton" disabled>开始 <kbd>Space</kbd></button><button id="restartButton" disabled>重来 <kbd>R</kbd></button><label class="speed-label" for="speed">游速 <select id="speed"><option value="240">慢悠悠</option><option value="170" selected>正常游</option><option value="110">饿急了</option></select></label><button id="soundButton" aria-pressed="true" title="吃豆音效（M）"><span id="soundLabel">音效 开</span><span>♪</span></button><button id="fullscreenButton" title="全屏游戏">铺满屏幕 <span>⛶</span></button></div><div class="key-guide"><span>方向键 / WASD</span><span class="rule-dot">·</span><span>吃一个，多一个鱼头</span></div></section>
+ <section class="touch-controls" aria-label="触屏操作"><div class="dpad"><button data-direction="n" aria-label="向上">↑</button><button data-direction="w" aria-label="向左">←</button><button data-direction="s" aria-label="向下">↓</button><button data-direction="e" aria-label="向右">→</button></div><p>也可以在地图上滑动转向。</p></section>
+ <footer class="footnote"><div class="food-line"><span>今日菜单</span><div id="menuIcons" aria-label="七种AI图标豆子"></div></div><p>靠近张嘴，吞下合齿。穿墙不死，咬到鱼头才算输。<span class="offline">纯本地 · 无需安装 · 不联网</span></p></footer>
+ <div class="load-error" id="loadError" hidden role="alert"></div>
+</main>
+<script src="assets/manifest.js"></script><script src="assets/sfx/pop-sample.js"></script><script src="core.js"></script><script src="audio.js"></script><script src="game.js"></script>
+</body></html>

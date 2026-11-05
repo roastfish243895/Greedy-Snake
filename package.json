@@ -1,0 +1,11 @@
+{
+  "name": "big-fish-snake-v2",
+  "version": "2.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Offline wraparound snake with pixel portraits and AI-icon food",
+  "scripts": {
+    "test": "node tests/core.test.cjs"
+  },
+  "dependencies": {}
+}

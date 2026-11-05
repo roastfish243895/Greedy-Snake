@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "created": "2026-10-13",
+  "head": {
+    "open": "assets/head/open.png",
+    "closed": "assets/head/closed.png"
+  },
+  "fish": {
+    "neutral": "assets/fish/neutral.png",
+    "happy": "assets/fish/happy.png",
+    "surprised": "assets/fish/surprised.png",
+    "angry": "assets/fish/angry.png",
+    "cry": "assets/fish/cry.png",
+    "smug": "assets/fish/smug.png"
+  },
+  "foods": {
+    "openai": "assets/food/openai.png",
+    "qwen": "assets/food/qwen.png",
+    "grok": "assets/food/grok.png",
+    "gemini": "assets/food/gemini.png",
+    "hunyuan": "assets/food/hunyuan.png",
+    "codex": "assets/food/codex.png",
+    "claude": "assets/food/claude.png"
+  },
+  "sourceCopies": {
+    "note": "Process source copies are kept locally and are not part of this repository."
+  },
+  "notes": [
+    "Food sprites are simple downscaled crops of locally supplied icon images; no replacement artwork is used.",
+    "Codex outer white field is removed locally; internal white glyph remains.",
+    "Fish heads are byte-for-byte copies of v1 compact portraits."
+  ]
+}
